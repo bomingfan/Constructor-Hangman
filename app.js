@@ -35,12 +35,12 @@ game = {
             var guessBool = that.currentWord.checkLetter(result.guessLetter);
             // if guess wrong guessRemaining--
             if (guessBool === 0) {
-                console.log("WRONG");
+                console.log("WRONG!");
                 that.guessesRemaining--;
             }
             // if guess right 
             else {
-                console.log("CORRECT");
+                console.log("CORRECT!!!");
                 // if checkfind function return true, console.log win and stop
                 if (that.currentWord.checkFind()) {
                     console.log("You won! The Word is: " + that.currentWord.word);
