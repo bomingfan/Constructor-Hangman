@@ -17,5 +17,10 @@ var Letter = function (letter) {
     };
 };
 
+// testing if the constructor is working or not
+// var e = new Letter('e');
+// e.show = true;
+// console.log(e.letterRender());
+
 //export the constructor
 module.exports = Letter;
