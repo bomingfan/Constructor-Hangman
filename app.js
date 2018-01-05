@@ -13,7 +13,7 @@ prompt.start();
 
 game = {
     wordArray: ['html', 'javascript', 'python', 'css', 'mysql'],
-    guessesRemaining: 10,
+    guessesRemaining: 5,
     currentWord: null,
     
     startGame: function () {
@@ -24,14 +24,14 @@ game = {
     },
 
     resetGuesses: function(){
-        this.guessesRemaining = 10;
+        this.guessesRemaining = 5;
     },
 
     promptUser: function(){
         var self = this;
         prompt.get(['guessLetter'], function(err, result){
             console.log("You guessed: " + result.guessLetter);
-            var manyGuessed = this.currentWord.checkLetter(result.guessLetter);
+            var manyGuessed = self.currentWord.checkLetter(result.guessLetter);
 
             if(manyGuessed ==0) {
                 console.log("WRONG");
