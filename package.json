@@ -1,0 +1,22 @@
+{
+  "name": "constructor-hangman",
+  "version": "1.0.0",
+  "description": "using Node.js and constructors to build the hangman game",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bomingfan/Constructor-Hangman.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bomingfan/Constructor-Hangman/issues"
+  },
+  "homepage": "https://github.com/bomingfan/Constructor-Hangman#readme",
+  "dependencies": {
+    "inquirer": "^4.0.2"
+  }
+}
