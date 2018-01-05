@@ -28,7 +28,7 @@ var Word = function (wd) {
         // iterates through each letter to see check for match
         for (var i = 0; i < this.letters.length; i++) {
             // if letter is the guessed letter, change the indicator to true
-            if (this.letters[i].char == guessLetter) {
+            if (this.letters[i].char == guessedLetter) {
                 this.letters[i].show = true;
                 counter++;
             }
@@ -47,9 +47,14 @@ var Word = function (wd) {
 		return this.find;
     };
 
-    // 
-
-
+    // show word
+    this.wordRender = function() {
+        var wordString = '';
+        for (var i=0; i < this.letters.length; i++){
+            wordString += this.letters[i].letterRender();
+        }
+        return wordString;
+    };
 
 
 }

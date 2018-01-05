@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/bomingfan/Constructor-Hangman#readme",
   "dependencies": {
-    "inquirer": "^4.0.2"
+    "inquirer": "^4.0.2",
+    "prompt": "^1.0.0"
   }
 }
