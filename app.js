@@ -1,6 +1,7 @@
 // require packages and constructor
 var Word = require('./word.js');
 var prompt = require('prompt');
+var fs = require('fs');
 
 console.log("Guess a web language?");
 prompt.start();
@@ -27,12 +28,13 @@ game = {
     },
     // prompt user function
     promptUser: function () {
-        // need to substitue this to that since here "this" is not game
+        // need to substitue this to that since here "this" inside prompt.get is not game, it is npm prompt
         var that = this;
         prompt.get(['guessLetter'], function (err, result) {
             console.log("You guessed: " + result.guessLetter);
             // create variable to see if tell right or wrong
             var guessBool = that.currentWord.checkLetter(result.guessLetter);
+
             // if guess wrong guessRemaining--
             if (guessBool === 0) {
                 console.log("WRONG!");
@@ -53,8 +55,8 @@ game = {
             console.log("--------------------------------------------------");
             // As long as there is still guess left and the word is found, keep prompt user and show word progress
             if ((that.guessesRemaining > 0) && (that.currentWord.find == false)) {
-                that.promptUser();
                 that.currentWord.wordRender();
+                that.promptUser();
             }
             // if no guess left, game over and show the correct word
             else if (that.guessesRemaining === 0) {

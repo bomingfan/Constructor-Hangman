@@ -56,17 +56,8 @@ var Word = function (wd) {
         console.log(wordString);
     };
 
-
 }
 
-// Testing if consutructor is working properly
-// var test = new Word('java');
-// console.log(test);
-// test.letterPush();
-// console.log(test.letters);
-// test.checkLetter("a");
-// test.checkFind();
-// test.wordRender();
 
 // export
 module.exports = Word;
