@@ -45,7 +45,7 @@ game = {
                 console.log("CORRECT!!!");
                 // if checkfind function return true, console.log win and stop
                 if (that.currentWord.checkFind()) {
-                    console.log("You won! The Word is: " + that.currentWord.word);
+                    console.log("You won! The word is: " + that.currentWord.word);
                     console.log("--------------------------------------------------");
                     return;
                 }
