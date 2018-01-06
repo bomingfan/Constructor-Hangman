@@ -6,3 +6,4 @@ Two constructors "Word" and "Letter" are used.
 
 Win Screen:
 
+![alt text](https://github.com/bomingfan/Constructor-Hangman/blob/master/images/win.gif)
