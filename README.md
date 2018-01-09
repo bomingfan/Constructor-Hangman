@@ -16,10 +16,10 @@ You will be prompt to guess any letter from the target word.
 
 Below are some scenarios you might encounter:
 
-Win:
+Winning scenario:
 
 ![alt text](https://github.com/bomingfan/Constructor-Hangman/blob/master/images/win.gif)
 
-Lose:
+Losing scenario:
 
 ![alt text](https://github.com/bomingfan/Constructor-Hangman/blob/master/images/fail.gif)
