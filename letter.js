@@ -10,7 +10,7 @@ var Letter = function (letter) {
     // if default, the value should be "_", if true, then show the letter.
     this.letterRender = function () {
         if (this.show === false) {
-            return "_";
+            return " _";
         } else {
             return this.char;
         }
